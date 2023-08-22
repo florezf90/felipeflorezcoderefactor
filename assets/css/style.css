@@ -34,7 +34,8 @@ body {
 
 .header div ul li {
     display: inline-block;
-    margin-left: 55px;
+    margin-left: 25px;
+    
 }
 
 a {
@@ -42,9 +43,10 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
+/*
+deleted from original CSS the P selector, didn't find any functionality
+ in the corresponding code
+*/
 
 .hero {
     height: 800px;
@@ -55,23 +57,34 @@ p {
     background-position: center;
 }
 
+
+/* changes the positioning of the image within the articles in the content section to the left of the container*/
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* changes the positioning of the image within the reputation managment secition to the right of the container*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* 
+provides the maximum width of the articles within the content section, so it can share screen
+with the aside section on the screen
+*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+/*
+.benefits provides positioning for the aside section
 
-.benefits {
+*/
+ .benefits{
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -82,104 +95,65 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*
+replaced every unique .benefit-subject (cost, lead, brand)
+for the class benefit-pillar, which changes the color of the P and h3 elements in the aside section,
+as well as their distribution
+*/
+.benefit-pillar {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/*
+replaced every unique .benefit-header for the class benefit h3, which changes the positioning of the h3 
+element within the aside section
+*/
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/*
+replaced every unique .benefit-image for the class benefit img, which changes the size of the img elements
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+*/
 
-.benefit-lead img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*
+replaced every unique article class (SEO, reputation managment, social media marketing)
+ for the class .marketing-section, that provides style for the h2 and p elements, as well as 
+ background color
+*/
+.marketing-section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/*
+replaced every unique marketing article img class for the class marketing img, that set's the max 
+size of the img elements
+*/
+.marketing img {
+max-height: 200px;
+
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+/*
+replaced every unique marketing article h2 class for the class marketing h2, that changes the size of every marketing section title
+*/
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+.marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -189,8 +163,14 @@ p {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+
 }
 
+/*
+
+tried to delete the h2 element, however, by doing it, it altered the size of the h2 element in footer section
+*/
 .footer h2 {
+
     font-size: 20px;
 }
